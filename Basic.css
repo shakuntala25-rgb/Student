@@ -1,0 +1,285 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20240827/pngtree-blue-gradient-wavy-background-vector-image_16153040.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #cce5ff;
+}
+
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+header nav ul a:hover {
+  background-color: lightblue;
+}
+
+
+#promain {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+#profile {
+  text-align: center;
+}
+
+#profile img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+#protext {
+  max-width: 600px;
+}
+
+#protext p {
+  font-size: 1.1em;
+  margin-left: 20px;
+}
+
+#courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 30px;
+}
+
+#courses img {
+  /* width: 200px;
+  height: 150px; */
+  border-radius: 10px;
+  padding: 10px;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+#courses img:hover {
+  transform: scale(1.05);
+}
+
+
+#grades {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+caption h1 {
+  font-size: 30px;
+  padding-top: 15%;
+}
+
+#grades table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: pink;
+  color: black;
+}
+
+#grades table:hover td {
+  background-color: #f3e5f5;
+}
+
+#feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 50px;
+}
+
+#feedback form {
+  background: white;
+  padding: 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  max-width: 450px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: green;
+}
+
+
+#contact {
+  color: black;
+  text-align: center;
+  padding: 40px 10px;
+}
+
+#contact img {
+  height: 150px;
+  width: 120px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+#contact h1 {
+  padding-top: 5%;
+}
+
+
+footer {
+  background-color: #0044cc;
+  text-align: center;
+  padding: 20px 10px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer img {
+  height: 40px;
+  width: 40px;
+  transition: transform 0.3s ease;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #promain {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #profile img {
+    width: 220px;
+    height: 220px;
+  }
+
+  #protext p {
+    margin-left: 0;
+  }
+
+  #grades table {
+    font-size: 0.9em;
+  }
+}
+
+
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction:row;
+    gap:5px;
+  }
+
+  header nav ul a {
+    width: 100%;
+    background-color: #f0f0f0;
+    display: block;
+  }
+
+  #courses img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  #feedback form {
+    padding: 20px;
+  }
+}
+
